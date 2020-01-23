@@ -1,0 +1,23 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "testheadmode":"npm run test -- --headed",
+    "testChrome": "npm run test -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key b90f2a16-55b0-43cd-81c7-0311dc7a3637 --reporter mochawesome",
+    "RunGreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
+  },
+  "keywords": [
+    "ImadEssadeq"
+  ],
+  "author": "ImadEssadeq",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.8.2",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}
