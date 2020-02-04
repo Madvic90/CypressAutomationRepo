@@ -15,7 +15,7 @@ describe('My first testsuite', function()
         //parent child relation
         //met .products.find gaat die alleen in de parent products kijken
         //Alias meegeven aan een webelement, deze kun je herbruiken in andere testcases
-        cy.get('.products').as('ProductLocator')
+        cy.get('.products').as('ProductLocator')// adding comments to solution
         cy.get('@ProductLocator').find('.product').should('have.length', 4)
         // use this method is there are elements with the same name
         //first enter the parent, then the child and then choose the item.
